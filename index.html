@@ -1,38 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body style="background-color:#aaa;" border=2>
 
-	<div class="container=fluid container p-5 my-5 bg-dark text-white">
-		<img src="profile.jpg" class="rounded mx-auto d-block" alt="Ravit Sharma" class="rounded-circle">
-		<br>
-		<h1 class="text-center">Ravit Sharma</h1>
-		<p class="text-center">Welcome to my website.</p>
-	</div>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+		  <ul class="navbar-nav">
+			<li class="nav-item active">
+			  <a class="nav-link" href="">Home<span class="sr-only">(current)</span></a>
+			</li>
+			<!--
+			<li class="nav-item">
+				<a class="nav-link" href="">Research Experience</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="">Gallery</a>
+			</li>
+			-->
+			<li class="nav-item">
+				<a class="nav-link" href="https://drive.google.com/file/d/1ZZPodcSh49kQkVlxsgpeKqL7hmO4DkEn/view">Resume</a>
+			</li>
+			<li class="nav-item dropdown">
+			  <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Profiles
+			  </a>
+			  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+				<a class="dropdown-item" href="https://www.linkedin.com/in/ravit-sharma/">LinkedIn</a>
+				<a class="dropdown-item" href="https://github.com/SRavit1/">GitHub</a>
+				<a class="dropdown-item" href="https://medium.com/@sharma.ravit">Medium</a>
+			  </div>
+			</li>
+		  </ul>
+		</div>
+	</nav>
 
-
-	<div class="container-fluid container p-1 my-1 bg-light text-black">
-		<h2 class="text-center">About</h2>
+	<div class="container clearfix my-5 px-0 bg-dark text-white">
+		<img src="profile.jpg" class="float-left col-md-5 px-0" alt="Ravit Sharma">
+		
+		<div id="title-right" class="float-right col-md-7">
+			<h1 class="px-0 py-3 bg-light text-dark text-center">Ravit Sharma Personal Website</h1>
+			<p class="py-3 text-justify align-middle">
+				I am an incoming final-year undergraduate student at UCLA
+				studying computer science. I am interested in TinyML,
+				Intelligent Internet of Things (IIoT), and efficient deep
+				learning. By pursuing these interests, I hope to make AI models
+				fast, energy-efficient, generalizable to all computing
+				platforms, and heavily tailored to their application and
+				hardware.
+			</p>
+			<p class="py-3 text-justify align-middle">
+				In my spare time, I enjoy pursuing hobbies like kickboxing,
+				running, and playing the piano. I also enjoy browsing through
+				various scientific fields through online videos and nonfiction
+				reading. After completing my undergraduate degree, I look
+				forward to exploring and contributing to methods for expanding
+				the impact of AI in everday life.
+			</p>
+		</div>
 	</div>
-	<div class="container-fluid container p-5 my-5 bg-dark text-white d-grid gap-2" style="margin-top: 0 !important;">
-		<p class=text-justify>
-		I'm a second year undergrad computer science student at UCLA. My academic interests include edge neural network training/inferencing, which I've developed through 2+ years of research and work experience. In my free time, I enjoy jogging, playing badminton, and listening to the radio.
-		</p>
-	</div>
-
-	<div class="container-fluid container p-1 my-1 bg-light text-black">
-		<h2 class="text-center">Links</h2>
-	</div>
-	<div class="container-fluid container p-5 my-5 bg-dark text-white d-grid gap-2" style="margin-top: 0 !important;">
-		<a type="button" class="btn btn-primary btn-lg btn-block" href="https://drive.google.com/file/d/1ZZPodcSh49kQkVlxsgpeKqL7hmO4DkEn/view?usp=sharing">Resume</a>
-		<br>
-		<a type="button" class="btn btn-primary btn-lg btn-block" href="https://www.linkedin.com/in/ravit-sharma/">LinkedIn</a>
-		<br>
-		<a type="button" class="btn btn-primary btn-lg btn-block" href="https://github.com/SRavit1">GitHub</a>
-	</div>
-
 </body>
 </html>
